@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 11/02/2021 06:38
+  	Creation date: 22/02/2021 13:39
   	*/
 
 @font-face {
@@ -32,3 +32,20 @@ margin-left: 20px;
 
 .flaticon-envelope:before { content: "\f100"; }
 .flaticon-padlock:before { content: "\f101"; }
+.flaticon-dashboard:before { content: "\f102"; }
+.flaticon-search:before { content: "\f103"; }
+.flaticon-stack-of-papers:before { content: "\f104"; }
+.flaticon-funnel:before { content: "\f105"; }
+.flaticon-stats:before { content: "\f106"; }
+.flaticon-information:before { content: "\f107"; }
+.flaticon-settings:before { content: "\f108"; }
+.flaticon-gift-card:before { content: "\f109"; }
+.flaticon-logout:before { content: "\f10a"; }
+.flaticon-notification:before { content: "\f10b"; }
+.flaticon-flags:before { content: "\f10c"; }
+.flaticon-email:before { content: "\f10d"; }
+.flaticon-open-mail:before { content: "\f10e"; }
+.flaticon-man-user:before { content: "\f10f"; }
+.flaticon-question:before { content: "\f110"; }
+.flaticon-right-down:before { content: "\f111"; }
+.flaticon-list:before { content: "\f112"; }
