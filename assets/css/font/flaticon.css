@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 22/02/2021 13:39
+  	Creation date: 27/02/2021 22:24
   	*/
 
 @font-face {
@@ -49,3 +49,6 @@ margin-left: 20px;
 .flaticon-question:before { content: "\f110"; }
 .flaticon-right-down:before { content: "\f111"; }
 .flaticon-list:before { content: "\f112"; }
+.flaticon-facebook-message:before { content: "\f113"; }
+.flaticon-chat:before { content: "\f114"; }
+.flaticon-drop-down-arrow:before { content: "\f115"; }

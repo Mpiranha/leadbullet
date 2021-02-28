@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 22/02/2021 13:39
+    Creation date: 27/02/2021 22:24
     */
 
     @font-face {
@@ -56,6 +56,9 @@
 .flaticon-question:before { content: "\f110"; }
 .flaticon-right-down:before { content: "\f111"; }
 .flaticon-list:before { content: "\f112"; }
+.flaticon-facebook-message:before { content: "\f113"; }
+.flaticon-chat:before { content: "\f114"; }
+.flaticon-drop-down-arrow:before { content: "\f115"; }
     
     $font-Flaticon-envelope: "\f100";
     $font-Flaticon-padlock: "\f101";
@@ -76,3 +79,6 @@
     $font-Flaticon-question: "\f110";
     $font-Flaticon-right-down: "\f111";
     $font-Flaticon-list: "\f112";
+    $font-Flaticon-facebook-message: "\f113";
+    $font-Flaticon-chat: "\f114";
+    $font-Flaticon-drop-down-arrow: "\f115";
