@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns</title>
+    <link rel="stylesheet" href="../assets/css/bootstap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="flex-wrapper">
+        <div class="expandable-sidebar">
+            <a class="link-wrap" href="#">
+                <div class="user-details-wrap">
+                    <img src="../assets/icons/user.svg" alt="user image">
+                    <div class="user-detail">
+                        Nick Emeka
+                    </div>
+                </div>
+            </a>
+
+            <nav class="nav flex-column nav-wrap">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <span class="flaticon-dashboard icons nav-icon"></span>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="search-lead.html">
+                        <span class="flaticon-search icons nav-icon"></span>
+                        <span class="nav-text">
+                            Search Lead
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="campaign.html">
+                        <span class="flaticon-stack-of-papers icons nav-icon"></span>
+                        <span class="nav-text">
+                            My Campaigns
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-page.html">
+                        <span class="flaticon-funnel icons nav-icon"></span>
+                        <span class="nav-text">
+                            Instant Salespage
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="marketing-tool.html">
+                        <span class="flaticon-stats icons nav-icon"></span>
+                        <span class="nav-text">
+                            Marketing Tools
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="training.html">
+                        <span class="flaticon-information icons nav-icon"></span>
+                        <span class="nav-text">
+                            Trainings
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <span class="flaticon-settings icons nav-icon"></span>
+                        <span class="nav-text">
+                            Settings
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="flaticon-gift-card icons nav-icon"></span>
+                        <span class="nav-text">
+                            Bonuses
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item x-mt">
+                    <a class="nav-link" href="#">
+                        <span class="flaticon-logout icons nav-icon"></span>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+
+            </nav>
+            <div class="text-center mt-auto">
+                <a href="index.html">
+                    <img class="logo-sidebar" src="../assets/images/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <section class="content">
+            <div class="container-fluid">
+                <div class="content-header">
+                    <div class="left-section">
+                        <span class="flaticon-list icons collapse-icon"></span>
+                        <div class="greet-text">
+                            Campaigns
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div>
+                            <div class="head-btn-wrap">
+                                <nav class="nav">
+                                    <a class="nav-link" href="#">FB Group</a>
+                                    <a class="nav-link" href="#">Agency Access</a>
+                                    <a class="nav-link" href="#">Reseller Access</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <nav class="nav mx-2">
+                            <a class="nav-link icon-link" href="#">
+                                <span class="flaticon-notification icons header-icon"></span>
+                            </a>
+                            <a class="nav-link icon-link" href="#">
+                                <span class="flaticon-flags icons header-icon"></span>
+                            </a>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="content-desc">
+                    Campaign details | Test One x
+                </div>
+
+                <div class="campaign-header">
+                    <div class="lead-details-wrap">
+                        <div class="lead-detail-item">
+                            <span class="text">TOTAL LEADS</span>
+                            <div class="lead-detail-val purple-bg">
+                                <span class="flaticon-man-user icons lead-detail-icon"></span>
+                                <span class="val">23</span>
+                            </div>
+                        </div>
+                        <div class="lead-detail-item">
+                            <span class="text">EMAIL SENT</span>
+                            <div class="lead-detail-val orange-bg">
+                                <span class="flaticon-email icons lead-detail-icon"></span>
+                                <span class="val">23</span>
+                            </div>
+                        </div>
+                        <div class="lead-detail-item">
+                            <span class="text">EMAIL OPENED</span>
+                            <div class="lead-detail-val green-bg">
+                                <span class="flaticon-email icons lead-detail-icon"></span>
+                                <span class="val">23</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-action" id="action-btn">ACTIONS
+
+                        <div class="action-dropdown">
+                            <div class="inner-rel-wrap">
+                                <ul class="nav flex-column">
+                                    <li class="list-item">
+                                        <a class="nav-link" href="#">Campaign Actions</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="nav-link" href="#">Send emails to all leads</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="nav-link" href="#">Download as CSV</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="nav-link" href="#">Download as JSON</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </button>
+
+
+
+                </div>
+
+                <div class="result-wrap mb-4">
+                    <div class="campaign-box">
+                        <div class="floating-menu">
+                            <div class="sm-lead-details">
+                                <div class="lead-detail-item">
+                                    <div class="lead-detail-val orange-bg">
+                                        <span class="flaticon-email icons lead-detail-icon"></span>
+                                        <span class="val">23</span>
+                                    </div>
+                                </div>
+                                <div class="lead-detail-item">
+                                    <div class="lead-detail-val green-bg">
+                                        <span class="flaticon-email icons lead-detail-icon"></span>
+                                        <span class="val">23</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="container-check">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <img class="campaign-image" src="../assets/images/test.jpeg" alt="campaign image">
+                        </div>
+                        <div class="campaign-contents">
+                            <div class="top-content">
+                                <div class="main-details">
+                                    <div class="title">Chatty Dentist</div>
+                                    <div class="details-flex">
+                                        <div class="detail-item">Website: <span>No website!</span></div>
+                                        <div class="detail-item">Pixels: Active <span
+                                                class="flaticon-chat icons campaign-pixel-icon ml-2"></span></span>
+                                        </div>
+                                        <div class="detail-item">Phone: <span>No phone</span></div>
+                                        <div class="detail-item">Email:<span></span></div>
+                                    </div>
+                                </div>
+                                <div class="camp-stat">
+                                    <div class="details-flex">
+                                        <div class="detail-item">Fanpage Likes: <span>0</span></div>
+                                        <div class="detail-item">Send Message: <span>Facebook <span
+                                                    class="flaticon-facebook-message icons campaign-social-sm-icon ml-1"></span></span>
+                                        </div>
+                                        <div class="detail-item">City:<span>London</span></div>
+                                        <div class="detail-item">Description:<span></span></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <button class="btn btn-campaign-box">Generate SEO report</button>
+                                <button class="btn btn-campaign-box">Generate Facebook report</button>
+                                <button class="btn btn-campaign-box">Generate Google report</button>
+                                <button class="btn btn-campaign-box">Show on map</button>
+                                <button class="btn btn-campaign-box green-bg">Send email</button>
+                                <button class="btn btn-campaign-box danger-bg">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-box">
+                        <div class="floating-menu">
+                            <label class="container-check">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <img class="campaign-image" src="../assets/images/test.jpeg" alt="campaign image">
+                        </div>
+                        <div class="campaign-contents">
+                            <div class="top-content">
+                                <div class="main-details">
+                                    <div class="title">Chatty Dentist</div>
+                                    <div class="details-flex">
+                                        <div class="detail-item">Website: <span>No website!</span></div>
+                                        <div class="detail-item">Pixels: Active <span
+                                                class="flaticon-chat icons campaign-pixel-icon ml-2"></span></span>
+                                        </div>
+                                        <div class="detail-item">Phone: <span>No phone</span></div>
+                                        <div class="detail-item">Email:<span></span></div>
+                                    </div>
+                                </div>
+                                <div class="camp-stat">
+                                    <div class="details-flex">
+                                        <div class="detail-item">Fanpage Likes: <span>0</span></div>
+                                        <div class="detail-item">Send Message: <span>Facebook <span
+                                                    class="flaticon-facebook-message icons campaign-social-sm-icon ml-1"></span></span>
+                                        </div>
+                                        <div class="detail-item">City:<span>London</span></div>
+                                        <div class="detail-item">Description:<span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <button class="btn btn-campaign-box">Generate SEO report</button>
+                                <button class="btn btn-campaign-box">Generate Facebook report</button>
+                                <button class="btn btn-campaign-box">Generate Google report</button>
+                                <button class="btn btn-campaign-box">Show on map</button>
+                                <button class="btn btn-campaign-box green-bg">Send email</button>
+                                <button class="btn btn-campaign-box danger-bg">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-box">
+                        <div class="floating-menu">
+                            <label class="container-check">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <img class="campaign-image" src="../assets/images/test.jpeg" alt="campaign image">
+                        </div>
+                        <div class="campaign-contents">
+                            <div class="top-content">
+                                <div class="main-details">
+                                    <div class="title">Chatty Dentist</div>
+                                    <div class="details-flex">
+                                        <div class="detail-item">Website: <span>No website!</span></div>
+                                        <div class="detail-item">Pixels: Active <span
+                                                class="flaticon-chat icons campaign-pixel-icon ml-2"></span></span>
+                                        </div>
+                                        <div class="detail-item">Phone: <span>No phone</span></div>
+                                        <div class="detail-item">Email:<span></span></div>
+                                    </div>
+                                </div>
+                                <div class="camp-stat">
+                                    <div class="details-flex">
+                                        <div class="detail-item">Fanpage Likes: <span>0</span></div>
+                                        <div class="detail-item">Send Message: <span>Facebook <span
+                                                    class="flaticon-facebook-message icons campaign-social-sm-icon ml-1"></span></span>
+                                        </div>
+                                        <div class="detail-item">City:<span>London</span></div>
+                                        <div class="detail-item">Description:<span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <button class="btn btn-campaign-box">Generate SEO report</button>
+                                <button class="btn btn-campaign-box">Generate Facebook report</button>
+                                <button class="btn btn-campaign-box">Generate Google report</button>
+                                <button class="btn btn-campaign-box">Show on map</button>
+                                <button class="btn btn-campaign-box green-bg">Send email</button>
+                                <button class="btn btn-campaign-box danger-bg">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+        <div id="add-link" class="modal" aria-modal="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Add lead to campaign</h1>
+                        <div class="modal-sub-title">Select target campaign</div>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <div type="button" data-toggle="collapse" data-target="#advance-option"
+                                aria-expanded="false" aria-controls="advance-option" class="form-item collapsed">
+                                <div class="icon-content">
+                                    <div class="icon-wrap"><span class="flaticon-settings-1 icons settings-icon"></span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="title">Choose campaign</div>
+                                    </div>
+                                </div>
+                                <div class="carret-down"><span
+                                        class="flaticon-drop-down-arrow icons carret-dropdown"></span>
+                                </div>
+                            </div>
+                            <div id="advance-option" class="collapse">
+                                <div class="form-advanced">
+                                    <div class="icon-content">
+
+                                        <div class="info">
+                                            <div class="title">Domain</div>
+                                            <div class="desc">Select on which short link should the
+                                                domain be accessible.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-advanced">
+                                    <div class="icon-content">
+
+                                        <div class="info">
+                                            <div class="title">Tags and Description</div>
+                                            <div class="desc">Add tags and description to easily find
+                                                your links.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center mt-4">
+
+                                <div class="buttons-wrap">
+                                    <button type="button" class="btn btn-add">Add</button>
+                                    <button type="button" class="btn btn-confirm">New Campaign</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+    </script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/js/custom/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns</title>
+    <link rel="stylesheet" href="../assets/css/bootstap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="flex-wrapper">
+        <div class="expandable-sidebar">
+            <a class="link-wrap" href="#">
+                <div class="user-details-wrap">
+                    <img src="../assets/icons/user.svg" alt="user image">
+                    <div class="user-detail">
+                        Nick Emeka
+                    </div>
+                </div>
+            </a>
+
+            <nav class="nav flex-column nav-wrap">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <span class="flaticon-dashboard icons nav-icon"></span>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="search-lead.html">
+                        <span class="flaticon-search icons nav-icon"></span>
+                        <span class="nav-text">
+                            Search Lead
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="campaign.html">
+                        <span class="flaticon-stack-of-papers icons nav-icon"></span>
+                        <span class="nav-text">
+                            My Campaigns
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-page.html">
+                        <span class="flaticon-funnel icons nav-icon"></span>
+                        <span class="nav-text">
+                            Instant Salespage
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="marketing-tool.html">
+                        <span class="flaticon-stats icons nav-icon"></span>
+                        <span class="nav-text">
+                            Marketing Tools
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="training.html">
+                        <span class="flaticon-information icons nav-icon"></span>
+                        <span class="nav-text">
+                            Trainings
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <span class="flaticon-settings icons nav-icon"></span>
+                        <span class="nav-text">
+                            Settings
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="flaticon-gift-card icons nav-icon"></span>
+                        <span class="nav-text">
+                            Bonuses
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item x-mt">
+                    <a class="nav-link" href="#">
+                        <span class="flaticon-logout icons nav-icon"></span>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+
+            </nav>
+            <div class="text-center mt-auto">
+                <a href="index.html">
+                    <img class="logo-sidebar" src="../assets/images/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <section class="content">
+            <div class="container-fluid">
+                <div class="content-header">
+                    <div class="left-section">
+                        <span class="flaticon-list icons collapse-icon"></span>
+                        <div class="greet-text">
+                            Campaigns
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div>
+                            <div class="head-btn-wrap">
+                                <nav class="nav">
+                                    <a class="nav-link" href="#">FB Group</a>
+                                    <a class="nav-link" href="#">Agency Access</a>
+                                    <a class="nav-link" href="#">Reseller Access</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <nav class="nav mx-2">
+                            <a class="nav-link icon-link" href="#">
+                                <span class="flaticon-notification icons header-icon"></span>
+                            </a>
+                            <a class="nav-link icon-link" href="#">
+                                <span class="flaticon-flags icons header-icon"></span>
+                            </a>
+                        </nav>
+                    </div>
+
+                </div>
+
+                <div class="campaign-header">
+                    <div>
+
+                        <button data-toggle="modal" data-target="#add-campaign" class=" btn btn-add-new">Add
+                            Campaigns</button>
+                    </div>
+
+
+                    <div class="d-flex">
+                        <form class="form-search">
+                            <input class="form-control form-noshadow" type="text" placeholder="Search Links">
+                            <button class="btn" type="submit">
+                                <span class="flaticon-search icons search-icon"></span>
+                            </button>
+                        </form>
+                        <div class="dropdown filter-dropdown">
+                            <button class="btn btn-filter dropdown-toggle" type="button" id="filter-dropdown-menu-btn"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="flaticon-funnel-1 icons filter-icon"></span>
+                                Filter
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table main-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input id="my-input" class="form-check-input head-check" type="checkbox" name=""
+                                    value="true">
+                            </th>
+                            <th>NAME</th>
+                            <th class="text-center">CREATED</th>
+
+                            <th class="text-center">LEADS</th>
+                            <th class="text-center">EMAILS SENT</th>
+                            <th class="text-center">EMAILS OPENED</th>
+                            <th>ACTIONS</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="main-check">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>Lead Magnet Campaign</td>
+                            <td class="text-center">17/05/2020</td>
+                            <td class="text-center">
+                                23
+                            </td>
+                            <td class="text-center">
+                                23
+                            </td>
+                            <td class="text-center">10</td>
+                            <td>
+                                <div class="table-actions">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="View Campaign"><span
+                                            class="flaticon-eye icons icon-actions"></span></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Edit Campaign"><span
+                                            data-toggle="modal" data-target="#edit-campaign"
+                                            class="flaticon-pencil icons icon-actions"></span></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Delete Campaign">
+                                        <span data-toggle="modal" data-target="#delete-campaign"
+                                            class="flaticon-trash-bin icons icon-actions text-danger"></span></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="main-check">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>George Floyd</td>
+                            <td class="text-center">17/05/2020</td>
+                            <td class="text-center">
+                                23
+                            </td>
+                            <td class="text-center">
+                                23
+                            </td>
+                            <td class="text-center">10</td>
+                            <td>
+                                <div class="table-actions">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="View Campaign"><span
+                                            class="flaticon-eye icons icon-actions"></span></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Edit Campaign"><span
+                                            data-toggle="modal" data-target="#edit-campaign"
+                                            class="flaticon-pencil icons icon-actions"></span></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Delete Campaign">
+                                        <span data-toggle="modal" data-target="#delete-campaign"
+                                            class="flaticon-trash-bin icons icon-actions text-danger"></span></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <nav aria-label="Page navigation" class="navigation">
+                    <ul class="pagination justify-content-start">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+        </section>
+
+        <div id="add-campaign" class="modal" aria-modal="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content p-3">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Add Campaign</h1>
+                        <div class="modal-sub-title">complete form details</div>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+
+                            <div class="form-group mt-4">
+
+                                <input type="text" name="" id="" class="form-control no-shadow campaign-add-input"
+                                    placeholder="Campaign name(Exampale: Black Lives Matters)">
+                            </div>
+
+                            <div class="d-flex justify-content-end align-items-center mt-4">
+
+                                <div class="buttons-wrap">
+                                    <button type="button" class="btn btn-add">Add</button>
+                                    <button type="button" class="btn btn-confirm">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="edit-campaign" class="modal" aria-modal="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content p-3">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Edit Campaign</h1>
+                        <div class="modal-sub-title">change campaign data</div>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+
+                            <div class="form-group mt-4">
+
+                                <input type="text" name="" id="" class="form-control no-shadow campaign-add-input"
+                                    placeholder="Campaign name(Exampale: Black Lives Matters)">
+                            </div>
+
+                            <div class="d-flex justify-content-end align-items-center mt-4">
+
+                                <div class="buttons-wrap">
+                                    <button type="button" class="btn btn-add">Edit</button>
+                                    <button type="button" class="btn btn-confirm danger-bg">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="delete-campaign" class="modal" aria-modal="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body py-5">
+                        <div class="d-flex align-items-center flex-column">
+                            <img src="../assets/icons/delete.png" class="msg-delete-icon" alt="delete icon">
+                            <div class="message">
+                                Are you sure you want to delete this campaign?
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <button type="button" class="btn btn-add mr-2">No, Cancel!</button>
+                                <button type="button" class="btn btn-confirm danger-bg">Yes, Delete it!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+    </script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/js/custom/script.js"></script>
+</body>
+
+</html>
