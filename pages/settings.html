@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketing Tool</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="../assets/css/bootstap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -57,7 +57,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="marketing-tool.html">
+                    <a class="nav-link" href="marketing-tool.html">
                         <span class="flaticon-stats icons nav-icon"></span>
                         <span class="nav-text">
                             Marketing Tools
@@ -73,7 +73,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="settings.html">
+                    <a class="nav-link active" href="settings.html">
                         <span class="flaticon-settings icons nav-icon"></span>
                         <span class="nav-text">
                             Settings
@@ -110,7 +110,7 @@
                     <div class="left-section">
                         <span class="flaticon-list icons collapse-icon"></span>
                         <div class="greet-text">
-                            Marketing Tool
+                            Profile Page
                         </div>
                     </div>
                     <div class="right-section">
@@ -135,102 +135,77 @@
 
                 </div>
 
-                <div class="marketing-topsection">
-                    <div class="title">
-                        More than 50 Marketing Tools that can help you gather important stats for any site.
+                <div class="row setting-item mt-5">
+                    <div class="col-6">
+                        <h4 class="form-title">Update Name or Profile Image</h4>
+                        <form class="mt-4" action="" method="post">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" name="" id="first-name"
+                                    class="form-control form-noshadow account-form" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name="" id="email" class="form-control form-noshadow account-form"
+                                    placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <div class="upload-wrap">
+
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <!-- <div class="upload-desc">
+                                            Recommended Size: Less <br>Than
+                                            2Mb (130 X 130
+                                        </div> -->
+                                        <div>
+                                            <div class="upload-btn">
+                                                <span class="text">Upload Picture</span>
+                                                <div class="icon-wrap">
+                                                    <span class="flaticon-upload-1 icons upload-icon"></span>
+                                                </div>
+                                                <input type="file" class="form-control-file" name="user-image-select"
+                                                    id="user-image-select">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-image-prev">
+                                        <img src="../assets/icons/profile-user.svg" class="user-image-icon">
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end mt-4">
+                                    <button class="btn btn-update">Update</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <form class="form-search">
-                        <input class="form-control form-noshadow" type="text" placeholder="Type any word to search SEO tools">
-                        <button class="btn" type="submit">
-                            <span class="flaticon-search icons search-icon"></span>
-                        </button>
-                    </form>
+                    <div class="col-6">
+                        <h4 class="form-title">Update Password</h4>
+                        <form class="mt-4" action="" method="post">
+                            <div class="form-group">
+                                <label for="">Current Password</label>
+                                <input type="password" name="" id="current-password"
+                                    class="form-control form-noshadow account-form" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">New Password</label>
+                                <input type="password" name="" id="new-password"
+                                    class="form-control form-noshadow account-form" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Confirm Password</label>
+                                <input type="password" name="" id="confirm-password"
+                                    class="form-control form-noshadow account-form" placeholder="">
+                            </div>
+                            <div class="d-flex justify-content-end mt-4">
+                                <button class="btn btn-update">Update</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="row justify-content-center my-5">
-                    <div class="col-10">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="tool-box">
-                                    <img src="../assets/images/tool-test-image.png" alt="">
-                                    <div class="name">Article Rewriter</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center my-3">
-                    <button class="btn btn-browse-more">
-                        Browse More Tools
-                        <span class="flaticon-right-arrow-angle icons more-icon"></span>
-                    </button>
-                </div>
+
+
 
 
 
