@@ -1575,3 +1575,72 @@ input:checked+.slider:before {
     padding: 0.2rem 1.5rem;
     border-radius: 1rem;
 }
+
+.report-icon::before,
+.report-right-icon::before {
+    color: #7d7d7d;
+    font-weight: 900;
+    font-size: 0.6rem;
+}
+
+.report-icon-left::before {
+    font-size: 0.8rem;
+    margin-right: 0.6rem;
+}
+
+.report-icon::before {
+    margin-right: 0.6rem;
+}
+
+.report-right-icon {
+    margin-left: auto;
+}
+
+.active-highlight {
+    margin-left: auto;
+    padding: 0.1rem 0.4rem;
+    border-radius: 50%;
+}
+
+.report-right-icon::before {
+    margin-left: auto;
+}
+
+.active .active-highlight {
+    background-color: #d9a0ec;
+}
+
+.active .report-right-icon::before {
+    color: #8a519e;
+}
+
+.report-main .nav-link {
+    color: #7d7d7d;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.report-main .nav-item:not(:first-child) .nav-link {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.report-main .nav-link.active {
+    background-color: #f5e5fa;
+    color: #7d7d7d;
+}
+
+.report-main .nav {
+    width: 155px;
+}
+
+.report-main .tab-content {
+    flex-grow: 1;
+}
+
+.modal-dialog {
+    max-width: 600px !important;
+    margin: 1.75rem auto;
+}

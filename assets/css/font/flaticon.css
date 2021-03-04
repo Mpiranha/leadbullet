@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 02/03/2021 23:03
+  	Creation date: 04/03/2021 21:53
   	*/
 
 @font-face {
@@ -66,3 +66,5 @@ margin-left: 20px;
 .flaticon-copy:before { content: "\f121"; }
 .flaticon-upload-1:before { content: "\f122"; }
 .flaticon-group-of-people:before { content: "\f123"; }
+.flaticon-right-arrow:before { content: "\f124"; }
+.flaticon-up-chevron:before { content: "\f125"; }
