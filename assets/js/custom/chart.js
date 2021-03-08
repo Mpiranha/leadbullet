@@ -10,10 +10,10 @@ am4core.ready(function() {
     
     // Add data
     chart.data = [{
-      "country": "USA",
+      "country": "Mar 04",
       "visits": 0
     }, {
-      "country": "China",
+      "country": "Mar 05",
       "visits": 1
     }, {
       "country": "Japan",

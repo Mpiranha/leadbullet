@@ -863,9 +863,10 @@ input:checked+.slider:before {
     background-color: #dcd2e4;
     color: var(--color-primary);
     border-radius: 1rem;
+    transition: all 0.5s;
 }
 
-.btn-campaign-box.add-campaign {
+.btn-campaign-box:hover {
     background-color: #ffcccc;
     color: #ff4242;
     font-weight: bold;
@@ -1147,7 +1148,7 @@ input:checked+.slider:before {
 
 .main-table td {
     vertical-align: middle;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .form-check-input.head-check {
@@ -1643,4 +1644,76 @@ input:checked+.slider:before {
 .modal-dialog {
     max-width: 600px !important;
     margin: 1.75rem auto;
+}
+
+.btn-export-csv {
+    color: var(--color-primary);
+    background-color: #ded3e6;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+}
+
+.btn-export-csv:hover {
+    color: #ded3e6;
+    background-color: var(--color-primary);
+}
+
+.facebook-report-main {
+    margin-top: 2rem;
+    display: flex;
+    padding: 0 5rem;
+    flex-direction: column;
+}
+
+.facebook-report-main > .title {
+    color: #5994ff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-self: flex-start;
+    /* margin: 0 0.5rem; */
+    border-bottom: 1px solid #5994ff;
+    padding-bottom: 1rem;
+    width: 95%;
+    align-self: center;
+}
+
+.page-loader-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    width: 100%;
+}
+
+.loader-main {
+    border: 1.5px solid #5994ff;
+    border-radius: 0.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.loader-main .progress {
+    height: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.loader-main .progress .progress-bar {
+    font-size: 0.7rem;
+} 
+
+.loader-main .title {
+    color: #eb7b44;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 0.7rem;
+}
+
+.color-title {
+    color: #5994ff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 5rem 0.5rem;
+}
+
+.color-title span {
+    color: #eb7b44;
 }

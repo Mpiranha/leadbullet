@@ -52,7 +52,15 @@
                     <a class="nav-link" href="sales-page.html">
                         <span class="flaticon-funnel icons nav-icon"></span>
                         <span class="nav-text">
-                            Instant Salespage
+                            Instant Funnel
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="leads.html">
+                        <span class="flaticon-funnel icons nav-icon"></span>
+                        <span class="nav-text">
+                            Leads
                         </span>
                     </a>
                 </li>
@@ -247,9 +255,10 @@
                             <div class="bottom-content">
                                 <button class="btn btn-campaign-box add-campaign" data-toggle="modal"
                                     data-target="#add-link">Add to campaign</button>
+                                <button class="btn btn-campaign-box" data-toggle="modal" data-target="#report">Generate
+                                    SEO report</button>
                                 <button class="btn btn-campaign-box" data-toggle="modal"
-                                data-target="#report">Generate SEO report</button>
-                                <button class="btn btn-campaign-box">Generate Facebook report</button>
+                                    data-target="#facebook-report">Generate Facebook report</button>
                                 <button class="btn btn-campaign-box">Generate Google report</button>
                                 <button class="btn btn-campaign-box">Show on map</button>
                                 <button class="btn btn-campaign-box">Send email</button>
@@ -295,9 +304,10 @@
                             <div class="bottom-content">
                                 <button class="btn btn-campaign-box add-campaign" data-toggle="modal"
                                     data-target="#add-link">Add to campaign</button>
+                                <button class="btn btn-campaign-box" data-toggle="modal" data-target="#report">Generate
+                                    SEO report</button>
                                 <button class="btn btn-campaign-box" data-toggle="modal"
-                                data-target="#report">Generate SEO report</button>
-                                <button class="btn btn-campaign-box">Generate Facebook report</button>
+                                    data-target="#facebook-report">Generate Facebook report</button>
                                 <button class="btn btn-campaign-box">Generate Google report</button>
                                 <button class="btn btn-campaign-box">Show on map</button>
                                 <button class="btn btn-campaign-box">Send email</button>
@@ -471,6 +481,73 @@
                                 <div class="tab-pane container fade" id="link-analysis">...</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="facebook-report" class="modal" aria-modal="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                        <h1 class="modal-title">Add lead to campaign</h1>
+                        <div class="modal-sub-title">Select target campaign</div>
+                    </div> -->
+                    <div class="modal-body py-4">
+                        <div class="report-title">
+                            Facebook Report
+                        </div>
+
+                        <div class="facebook-report-main">
+                            <h4 class="title">SHADY'S BAKERY</h4>
+                            <div class="page-loader-wrap">
+                                <div class="loader-main">
+                                    <div class="title">Frontpage</div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-primary" style="width: 25%"
+                                            role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            25%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loader-main">
+                                    <div class="title">Aboutpage</div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-primary" style="width: 75%"
+                                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            75%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="color-title">
+                                <span>FRONT</span>PAGE
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-confirm">Add to Funnel</button>
+                            <button class="btn btn-confirm ml-3">Generate a Link</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="send-email" class="modal show" style="display: block;" aria-modal="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                       
+
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-success btn-confirm">Send</button>
+                            <button class="btn btn-danger btn-confirm ml-3">Cancel</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
