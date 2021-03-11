@@ -1666,7 +1666,7 @@ input:checked+.slider:before {
     flex-direction: column;
 }
 
-.facebook-report-main > .title {
+.facebook-report-main>.title {
     color: #5994ff;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -1698,7 +1698,7 @@ input:checked+.slider:before {
 
 .loader-main .progress .progress-bar {
     font-size: 0.7rem;
-} 
+}
 
 .loader-main .title {
     color: #eb7b44;
@@ -1716,4 +1716,35 @@ input:checked+.slider:before {
 
 .color-title span {
     color: #eb7b44;
+}
+
+.mail-form .label-title {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.mail-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.mail-form .text-input {
+    border-radius: 0;
+    border: none;
+    padding: 0.35rem 0;
+    border-bottom: 2px solid #9900cc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.mail-form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.mail-form .select-mail {
+    border-radius: 1rem;
+    background-color: #f5e5fa;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
