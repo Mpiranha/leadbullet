@@ -1009,9 +1009,9 @@ input:checked+.slider:before {
 .btn-add-new {
     background-color: var(--color-primary);
     color: #ffffff;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    padding: 0.2rem 1rem;
+    padding: 0.1rem 1rem;
     border-radius: 1.5rem;
 }
 
@@ -1747,4 +1747,9 @@ input:checked+.slider:before {
     background-color: #f5e5fa;
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.plus-icon {
+    font-size: 1rem;
+    margin-right: 0.2rem;
 }
