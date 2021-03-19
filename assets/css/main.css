@@ -997,6 +997,7 @@ input:checked+.slider:before {
 
 .report-main {
     display: flex;
+    align-items: center;
 }
 
 .campaign-header {
@@ -1779,4 +1780,63 @@ input:checked+.slider:before {
     text-align: center;
     font-size: 0.6rem;
     line-height: 11px;
+}
+
+.report-detail {}
+
+.report-detail .title {
+    color: #558fc0;
+    font-size: 0.9rem;
+}
+
+.report-detail .report-date {
+    font-size: 0.7rem;
+    margin-top: -5px;
+}
+
+.progress-wraps {
+    margin-top: 0.5rem;
+}
+
+.prog-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.prog-icon {
+    width: 1rem;
+}
+
+.prog-item .left-section-prog {
+    font-size: 0.8rem
+}
+
+.prog-bar {
+    width: 185px;
+    margin-left: auto;
+}
+
+.prog-bar .progress {
+    height: 0.5rem;
+    background-color: #f4f5f9;
+}
+
+.prog-bar .progress .progress-bar,
+.prog-bar .progress {
+    border-radius: 0.5rem;
+}
+
+.prog-bar .progress .progress-success {
+    background-color: #d1f0d2;
+    border: 2px solid #8bc49c;
+}
+
+.prog-bar .progress .progress-warning {
+    background-color: #ffe3aa;
+    border: 2px solid #ecb867;
+}
+
+.prog-bar .progress .progress-danger {
+    
 }
