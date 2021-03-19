@@ -1786,7 +1786,8 @@ input:checked+.slider:before {
 
 .report-detail .title {
     color: #558fc0;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .report-detail .report-date {
@@ -1795,13 +1796,13 @@ input:checked+.slider:before {
 }
 
 .progress-wraps {
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .prog-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .prog-icon {
@@ -1838,5 +1839,15 @@ input:checked+.slider:before {
 }
 
 .prog-bar .progress .progress-danger {
-    
+    background-color: #f7bcb7;
+    border: 2px solid #d2827b;
+}
+
+.btn-download-pdf {
+    background-color: #ebccf5;
+    color: #9900cc;
+    border-radius: 1rem;
+    padding: 0.2rem 1.5rem;
+    font-size: 0.9rem;
+    margin: 0.7rem 0;
 }
