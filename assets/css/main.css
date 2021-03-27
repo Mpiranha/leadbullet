@@ -309,6 +309,18 @@
     width: 60px;
 }
 
+.only-logo {
+    display: none;
+}
+
+.shrinked .logo-sidebar:nth-child(1) {
+    display: none;
+}
+
+.shrinked .only-logo {
+    display: block;
+}
+
 .content-header,
 .content-header .left-section,
 .content-header .right-section {
