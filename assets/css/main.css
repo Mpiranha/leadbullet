@@ -2105,3 +2105,14 @@ input:checked+.slider:before {
     padding: 0.3rem 1.85rem;
     border: 2px solid #b951dc;
 }
+
+.social-list .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.social-icon-sm {
+    width: 1.3rem;
+    margin-right: 0.3rem;
+}
