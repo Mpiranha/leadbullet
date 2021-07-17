@@ -397,7 +397,7 @@
                             Search engine Optimization Report
                         </div>
                         <div class="report-main">
-                            <ul class="nav nav-pills flex-column nav-report">
+                            <ul id="list-example" class="nav nav-pills list-group flex-column nav-report">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span class="flaticon-up-chevron icons report-icon"></span>
@@ -415,7 +415,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="pill" href="#seo">
+                                    <a class="nav-link active" href="#seo">
                                         <span class="flaticon-search icons report-icon-left"></span>
                                         <span>SEO</span>
                                         <span class="active-highlight">
@@ -424,7 +424,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#usability">
+                                    <a class="nav-link" href="#usability">
                                         <span class="flaticon-usability icons report-icon-left"></span>
                                         <span>Usability</span>
                                         <span class="active-highlight">
@@ -433,7 +433,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#mobile">
+                                    <a class="nav-link" href="#mobile">
                                         <span class="flaticon-smartphone-call icons report-icon-left"></span>
                                         <span>Mobile</span>
                                         <span class="active-highlight">
@@ -442,7 +442,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#tech">
+                                    <a class="nav-link" href="#tech">
                                         <span class="flaticon-rocket icons report-icon-left"></span>
                                         <span>Technology</span>
                                         <span class="active-highlight">
@@ -451,7 +451,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#social">
+                                    <a class="nav-link" href="#social">
                                         <span class="flaticon-like icons report-icon-left"></span>
                                         <span>Social</span>
                                         <span class="active-highlight">
@@ -460,7 +460,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#visits">
+                                    <a class="nav-link" href="#visits">
                                         <span class="flaticon-group-of-people icons report-icon-left"></span>
                                         <span>Visitors</span>
                                         <span class="active-highlight">
@@ -469,7 +469,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#link-analysis">
+                                    <a class="nav-link" href="#link-analysis">
                                         <span class="flaticon-stats icons report-icon-left"></span>
                                         <span>Link Analysis</span>
                                         <span class="active-highlight">
@@ -544,11 +544,12 @@
 
                                 <button class="btn btn-download-pdf">Download PDF</button>
                             </div>
-                            <div class="tab-content px-1 report-tabs">
-                                <div class="tab-pane container" id="overview">
+                            <div id="Scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0"
+                                class="scrollspy-example px-1 report-tabs">
+                                <div class="container" id="overview">
 
                                 </div>
-                                <div class="tab-pane container active" id="seo">
+                                <div class="container" id="seo">
                                     <h2 class="title">
                                         Search Engine Optimization
                                     </h2>
@@ -1200,7 +1201,7 @@
 
                                     </div>
                                 </div>
-                                <div class="tab-pane container fade" id="usability">
+                                <div class="container" id="usability">
                                     <h2 class="title">
                                         Usability
                                     </h2>
@@ -1554,7 +1555,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane container fade" id="mobile">
+                                <div class="container" id="mobile">
                                     <h2 class="title">
                                         Mobile
                                     </h2>
@@ -1612,7 +1613,7 @@
                                     </div>
 
                                 </div>
-                                <div class="tab-pane container fade" id="tech">
+                                <div class="container" id="tech">
                                     <h2 class="title">
                                         Technologies
                                     </h2>
@@ -1762,7 +1763,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane container fade" id="social">
+                                <div class="container" id="social">
                                     <h2 class="title">
                                         Social
                                     </h2>
@@ -1810,7 +1811,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane container fade" id="visits">
+                                <div class="container" id="visits">
 
                                     <h2 class="title">
                                         Visitors
@@ -1868,7 +1869,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane container fade" id="link-analysis">
+                                <div class="container" id="link-analysis">
                                     <h2 class="title">
                                         Link Analysis
                                     </h2>
@@ -1992,6 +1993,9 @@
 
                         <div class="facebook-report-main">
                             <h4 class="title">SHADY'S BAKERY</h4>
+                            <div class="d-flex justify-content-center my-3">
+                                <img class="report-img" src="../assets/images/test.jpeg" alt="">
+                            </div>
                             <div class="page-loader-wrap">
                                 <div class="loader-main">
                                     <div class="title">Frontpage</div>
@@ -2012,13 +2016,184 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="color-title">
-                                <span>FRONT</span>PAGE
+                            <div class="report-title-wrap">
+                                <div class="color-title">
+                                    <span>FRONT</span>PAGE
+                                </div>
+                                <div class="desc">
+                                    Gives visitors a great first impression
+                                </div>
+                                <div class="right-percent-wrap">
+                                    <div class="percent-box">
+                                        75%
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="profile-details-wrap">
+                                <h6 class="title">
+                                    Profile Picture & Cover Photo
+                                </h6>
+                                <div class="status">
+                                    Provided
+                                </div>
+                                <div class="desc">
+                                    The Profile Picture & Cover Photo Are Key Aspect Of A Facebook Page. They Make The
+                                    First Visual Impression On User
+                                </div>
+                            </div>
+                            <div class="profile-details-wrap">
+                                <h6 class="title">
+                                    Username
+                                </h6>
+                                <div class="status not-provided">
+                                    Not Provided
+                                </div>
+                                <div class="desc">
+                                    The Profile Picture & Cover Photo Are Key Aspect Of A Facebook Page. They Make The
+                                    First Visual Impression On User
+                                </div>
+                            </div>
+                            <div class="profile-details-wrap">
+                                <h6 class="title">
+                                    About
+                                </h6>
+                                <div class="status">
+                                    Provided
+                                </div>
+                                <div class="desc">
+                                    The Profile Picture & Cover Photo Are Key Aspect Of A Facebook Page. They Make The
+                                    First Visual Impression On User
+                                </div>
+                            </div>
+                            <div class="profile-details-wrap">
+                                <h6 class="title">
+                                    Call to Action
+                                </h6>
+                                <div class="status">
+                                    Provided
+                                </div>
+                                <div class="desc">
+                                    The Profile Picture & Cover Photo Are Key Aspect Of A Facebook Page. They Make The
+                                    First Visual Impression On User
+                                </div>
+                            </div>
+
+                            <div class="report-title-wrap">
+                                <div class="color-title">
+                                    <span>AB</span>OUT
+                                </div>
+                                <div class="desc">
+                                    Due To Good Job Of Providing Visitors With Context And Information
+                                </div>
+                                <div class="right-percent-wrap">
+                                    <div class="percent-box">
+                                        100%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-details-wrap">
+                                <h6 class="title">
+                                    Contact Information
+                                </h6>
+                                <div class="status">
+                                    Provided
+                                </div>
+                                <div class="desc">
+                                    The Profile Picture & Cover Photo Are Key Aspect Of A Facebook Page. They Make The
+                                    First Visual Impression On User
+                                    <br><br>
+                                    08124578652<br>
+                                    Dwanejohn@Gmail.Com
+                                </div>
+                            </div>
+
+                            <div class="profile-details-wrap">
+                                <h6 class="title">
+                                    Location
+                                </h6>
+                                <div class="status">
+                                    Provided
+                                </div>
+                                <div class="desc">
+                                    The Profile Picture & Cover Photo Are Key Aspect Of A Facebook Page. They Make The
+                                    First Visual Impression On User
+                                </div>
+                            </div>
+
+                            <div class="report-title-wrap">
+                                <div class="color-title">
+                                    <span>OTHER</span> STATS
+                                </div>
+                                <div class="desc">
+                                    We Cannot Score Engagement Based On Public Profiles
+                                </div>
+                                <div class="right-percent-wrap border-0 mb-0">
+                                    <div class="percent-box">
+                                        N/A
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="table table-fb-report">
+                                <tbody>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>022115544100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>About</td>
+                                        <td>Plumber</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bio</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Category</td>
+                                        <td>Business Service</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Has Whatsapp number</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Has Whatsapp business number</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Can Post</td>
+                                        <td></td>
+                                    </tr><tr>
+                                        <td>Can Check in</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is Owned</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is unclai med</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fan Count</td>
+                                        <td>533</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rating Count</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Were here count</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center bordered-top py-4 mt-4">
                             <button class="btn btn-confirm">Add to Funnel</button>
                             <button class="btn btn-confirm ml-3">Generate a Link</button>
                         </div>
