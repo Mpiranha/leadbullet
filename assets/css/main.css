@@ -1,6 +1,7 @@
 @import 'font/flaticon.css';
 /* @import 'font/editor_icons/flaticon.css'; */
 
+
 :root {
     --color-primary: #46186c;
 }
@@ -2231,4 +2232,177 @@ input:checked+.slider:before {
     right: calc(100% + 0.8rem);
     top: 50%;
     margin-top: -2px;
+}
+
+.head-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 0.5rem;
+}
+
+.head-right .view-select {
+    margin-right: 2rem;
+}
+
+.view-select .nav-link {
+    padding: 0 0.3rem;
+}
+
+.view-select .img-active {
+    display: none;
+}
+
+.view-select .default-img,
+.view-select .img-active {
+    width: 1rem;
+}
+
+.view-select .active .img-active {
+    display: inline;
+}
+
+.view-select .active .default-img {
+    display: none;
+}
+
+.head-right .btn-save-funnel {
+    background-color: #d7cce0;
+    color: #6b3967;
+    border-radius: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.editor-main-wrap {
+    display: flex;
+    height: calc(100% - 140px);
+
+}
+
+.editor-main-wrap .editor-main,
+.editor-main-wrap .editor-toolbar {
+    height: 100%;
+}
+
+.editor-main-wrap .editor-main {
+    flex-grow: 1;
+    margin-right: 2.5rem;
+}
+
+.editor-main-wrap .editor-toolbar {
+    background-color: #ffffff;
+    width: 220px;
+    box-shadow: -2px -1px 3px #e1e1e1;
+}
+
+.toolbar-tabs .main-icon,
+.toolbar-tabs .icon-active {
+    width: 0.8rem;
+}
+
+.toolbar-tabs .nav-item {
+    flex-grow: 1;
+}
+
+.toolbar-tabs .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+    border-radius: 0;
+}
+
+.toolbar-tabs .nav-link.active {
+    color: #007afb;
+}
+
+.icon-active {
+    display: none;
+}
+
+.toolbar-tabs .nav-link.active .icon-active {
+    display: inline;
+}
+
+.toolbar-tabs .nav-link.active .main-icon {
+    display: none;
+}
+
+.collapse-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    text-decoration: none !important;
+    padding: 0.7rem 0;
+}
+
+.collapse-head i::before {
+    font-size: 0.6rem;
+    display: inline;
+    line-height: 24px;
+}
+
+.toolbar-tab-content {
+    padding: 0 0.8rem;
+}
+
+.form-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar-tab-content label {
+    font-size: 0.7rem;
+}
+
+.toolbar-tab-content .form-control {
+    font-size: 0.7rem;
+    height: calc(1.55rem + 2px) !important;
+    padding: 0.3rem 0.5rem;
+}
+
+.form-wrap .form-group {
+    margin-bottom: 0.6rem;
+}
+
+.float-btns {
+    display: flex;
+}
+
+.float-btns .btn-float {
+    flex-grow: 1;
+    border: 1px solid #007bfc;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.btn-float .main-icon, .btn-float .icon-active {
+    width: 0.6rem;
+}
+
+.btn-float:nth-child(1) {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.btn-float:nth-child(3) {
+    border-radius: 0rem 0.3rem 0.3rem 0;
+}
+
+.btn-float.active {
+    background-color: #007bfc;
+}
+
+
+.btn-float.active .icon-active {
+    display: inline;
+}
+
+
+.btn-float.active .main-icon {
+    display: none;
 }
