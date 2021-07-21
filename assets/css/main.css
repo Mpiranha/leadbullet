@@ -271,6 +271,7 @@
 
 .logo-sidebar {
     width: 90px;
+    margin-bottom: 1rem;
 }
 
 .shrinked {
@@ -544,7 +545,7 @@
     background-color: #ffcccc;
     height: 10px;
     width: 19px;
-    padding-bottom: 16px
+    padding-bottom: 15px
 }
 
 .arrow-wrap span::before {
@@ -2242,7 +2243,7 @@ input:checked+.slider:before {
 }
 
 .head-right .view-select {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .view-select .nav-link {
@@ -2288,11 +2289,12 @@ input:checked+.slider:before {
 .editor-main-wrap .editor-main {
     flex-grow: 1;
     margin-right: 2.5rem;
+    overflow-y: auto;
 }
 
 .editor-main-wrap .editor-toolbar {
     background-color: #ffffff;
-    width: 220px;
+    width: 240px;
     box-shadow: -2px -1px 3px #e1e1e1;
 }
 
@@ -2337,7 +2339,11 @@ input:checked+.slider:before {
     justify-content: space-between;
     font-size: 0.8rem;
     text-decoration: none !important;
-    padding: 0.7rem 0;
+    padding: 0.7rem 0.8rem;
+}
+
+.toolbar-tab-content .collapse {
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .collapse-head i::before {
@@ -2346,8 +2352,13 @@ input:checked+.slider:before {
     line-height: 24px;
 }
 
-.toolbar-tab-content {
+.inner-padding {
     padding: 0 0.8rem;
+}
+
+.toolbar-tab-content {
+    height: calc(100% - 58px);
+    overflow-y: auto;
 }
 
 .form-wrap {
@@ -2363,6 +2374,7 @@ input:checked+.slider:before {
     font-size: 0.7rem;
     height: calc(1.55rem + 2px) !important;
     padding: 0.3rem 0.5rem;
+    width: 90px;
 }
 
 .form-wrap .form-group {
@@ -2381,8 +2393,9 @@ input:checked+.slider:before {
     padding: 0.5rem 0;
 }
 
-.btn-float .main-icon, .btn-float .icon-active {
-    width: 0.6rem;
+.btn-float .main-icon,
+.btn-float .icon-active {
+    width: 0.7rem;
 }
 
 .btn-float:nth-child(1) {
@@ -2405,4 +2418,234 @@ input:checked+.slider:before {
 
 .btn-float.active .main-icon {
     display: none;
+}
+
+.head-toolbar {
+    display: flex;
+    justify-content: center;
+}
+
+.head-toolbar .icon-toolbar {
+    width: 0.9rem;
+}
+
+.head-toolbar .nav-link {
+    padding: 0 0.7rem 0rem 0.7rem;
+    cursor: pointer;
+}
+
+.editor-inner {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #df92f9;
+    position: relative;
+}
+
+.floating-toolbar {
+    background-color: #df92f9;
+    position: absolute;
+    right: -2px;
+    top: -25px;
+}
+
+.floating-toolbar .icon-toolbar {
+    width: 0.8rem;
+}
+
+.floating-toolbar .nav-link {
+    padding: 0 1rem;
+}
+
+.editor-inner .title {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.editor-inner .sub-title {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.editor-inner .editor-control-width {
+    flex-grow: 1;
+    max-width: 525px;
+    padding: 0.8rem 0;
+}
+
+.editor-inner p {
+    font-size: 0.9rem;
+}
+
+.editor-inner .embed-responsive {
+    margin-bottom: 0.5rem;
+}
+
+.list-report {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list-report li {
+    font-size: 0.9rem;
+}
+
+.list-report-num {
+    list-style-type: decimal;
+}
+
+.list-report li {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.list-report .sm-check-img {
+    width: 0.8rem;
+}
+
+.editor-inner .title-sm {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.btn-schedule {
+    background-color: #0045f0;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.btn-report {
+    background-color: #df92f9;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.report-title {
+    font-size: 1rem;
+    margin: 1.4rem 0;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox. */
+    background: transparent;
+    /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px;
+    /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #136fdd;
+    border-radius: 1.3px;
+    /* border: 0.2px solid #010101; */
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #136fdd;
+    border-radius: 1.3px;
+    /* border: 0.2px solid #010101; */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 15px 0;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    /* border: 0.2px solid #010101; */
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #136fdd;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #136fdd;
+    /* border: 0.2px solid #010101; */
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
 }
