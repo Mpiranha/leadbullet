@@ -271,7 +271,7 @@
 
 .logo-sidebar {
     width: 90px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .shrinked {
@@ -2648,4 +2648,53 @@ input[type=range]::-ms-fill-upper {
 
 input[type=range]:focus::-ms-fill-upper {
     background: #367ebd;
+}
+
+
+.btn-suggest {
+    background-color: #bc94f8;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    padding: 0.3rem .75rem;
+    margin-right: 0.5rem;
+}
+
+#feed-modal .modal-dialog {
+    width: 760px !important;
+    max-width: 760px !important;
+}
+
+#feed-modal .modal-title {
+    font-size: 1rem;
+}
+
+#feed-modal .modal-content {
+    border-radius: 1rem;
+}
+
+#feed-modal label {
+    font-size: 0.9rem;
+}
+
+.btn-new-updates {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #430ac4;
+    padding-left: 0;
+}
+
+.blue-bg {
+    background-color: #ceecf0;
+    color: #255b68;
+    font-size: 0.9rem;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-submit-feature {
+    color: #ffffff;
+    background-color: #bc94f8;
+    font-size: 0.9rem;
+    border-radius: 2rem;
 }

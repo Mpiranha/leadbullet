@@ -13,7 +13,7 @@
 
     <div class="flex-wrapper">
         <div class="expandable-sidebar">
-            <div class="text-center mb-auto">
+            <div class="text-center  ">
                 <a href="index.html">
                     <img class="logo-sidebar" src="../assets/images/logo.png" alt="">
                     <img class="logo-sidebar only-logo" src="assets/images/only logo.png" alt="">
@@ -128,13 +128,18 @@
                         </div>
                     </div>
                     <div class="right-section">
-                        <div>
-                            <div class="head-btn-wrap">
-                                <nav class="nav">
-                                    <a class="nav-link" href="#">FB Group</a>
-                                    <a class="nav-link" href="#">Agency Access</a>
-                                    <a class="nav-link" href="#">Reseller Access</a>
-                                </nav>
+                        <div class="d-flex align-items-center">
+
+                            <a data-toggle="modal" data-target="#feed-modal" href="#" class="btn btn-suggest">Suggest
+                                Feature</a>
+                            <div>
+                                <div class="head-btn-wrap">
+                                    <nav class="nav">
+                                        <a class="nav-link" href="#">FB Group</a>
+                                        <a class="nav-link" href="#">Agency Access</a>
+                                        <a class="nav-link" href="#">Reseller Access</a>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                         <nav class="nav mx-2">
@@ -2257,6 +2262,45 @@
                                 <button class="btn btn-danger btn-confirm ml-2">Cancel</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade bd-example-modal-lg" id="feed-modal" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Feature Suggest</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-inner">
+                    <div class="form-group mb-0 px-4 mt-4">
+                        <label for="my-textarea">Tell about the next feature you would like to have on the box
+                            below</label>
+                        <textarea id="my-textarea" class="form-control" name="" rows="4"></textarea>
+                    </div>
+                    <div class="px-4">
+                        <a href="#" class="nav-link btn-new-updates">Check out new Updates(Coming soon)</a>
+                    </div>
+
+                    <div class="blue-bg">
+                        <p>
+                            This is not a support box. Messages from here goes to a no-reply email. if you send us a
+                            support message from here you will not get a reply.
+                        </p>
+                        <hr style="border-top: 1px solid #b1e1e9;">
+                        <p class="mb-0">
+                            Want to contact support quickly? Send an email to banrads@goclickhub.com
+                        </p>
+                    </div>
+
+                    <div class="px-4 mb-4">
+                        <button type="button" name="" id="" class="btn btn-submit-feature btn-lg btn-block">Submit</button>
                     </div>
                 </div>
             </div>
