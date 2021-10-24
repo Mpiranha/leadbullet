@@ -2708,27 +2708,27 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .inner-content {
-    background-color: #ebf3fa;
+    background-color:#f9f9f9;
     height: calc(100vh - 93px);
     overflow-y: auto;
 }
 
 .bg-search-lead {
-    background-image: url('../assets/leadbullet/lead\ illustrator.svg');
+    background-image: url('../assets/leadbullet/lead\ illustrator.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40%;
 }
 
 .bg-facebook-lead {
-    background-image: url('../assets/leadbullet/search-leads-illustration.svg');
+    background-image: url('../assets/leadbullet/search-leads-illustration.png');
     background-repeat: no-repeat;
     background-position: center 80%;
     background-size: 40%;
 }
 
 .bg-google-lead {
-    background-image: url('../assets/leadbullet/google\ lead\ illustrator.svg');
+    background-image: url('../assets/leadbullet/google\ lead\ illustrator.png');
     background-repeat: no-repeat;
     background-position: center 95%;
     background-size: 40%;
